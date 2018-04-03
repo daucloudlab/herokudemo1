@@ -11,7 +11,7 @@ public class HelloController {
     @Autowired
     private BookRepository repository ;
 
-    @GetMapping("/test")
+    @GetMapping("/")
     public String home(Model model){
         model.addAttribute("books", repository.findAll()) ;
 
